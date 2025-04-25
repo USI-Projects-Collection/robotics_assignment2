@@ -1,3 +1,10 @@
+```bash
+pixi install
+pixi shell
+colcon build --symlink-install
+source install/setup.zsh
+```
+
 
 # How to clone this repo with the submodules
 ```bash

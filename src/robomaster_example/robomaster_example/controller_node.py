@@ -68,7 +68,7 @@ class ControllerNode(Node):
     def update_callback(self):
         # Let's just set some hard-coded velocities in this example
         cmd_vel = Twist() 
-        cmd_vel.linear.x  = 0.2 # [m/s]
+        cmd_vel.linear.x  = 10.0 # [m/s]
         cmd_vel.angular.z = 0.0 # [rad/s]
         
         # Publish the command
