@@ -254,3 +254,5 @@ AMENT_IGNORE
 
 ### pixi ###
 .pixi
+# png files
+*.png

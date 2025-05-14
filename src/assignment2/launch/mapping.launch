@@ -28,6 +28,19 @@
        The `output` option configures the node to print to the terminal, to help with debugging.
        By default, nodes launched from a launch file print their output to a log file.
   -->
-  <set_parameter name="use_sim_time" value="true" />
+  <!-- <set_parameter name="use_sim_time" value="true" /> -->
   <node pkg="assignment2" exec="mapping_node" namespace="$(var name)" output='screen' />
+  <node pkg="rviz2" exec="rviz2" name="rviz2" args="-d $(find-pkg-share assignment2)/rviz/mapping_config.rviz" />
+  <!-- <node
+     pkg="assignment2"
+     exec="mapping_node"
+     name="mapping_node"
+     namespace="/rm0"
+     output="screen"
+     >
+     <remap from="range_front_left" to="range_0"/>
+     <remap from="range_front_right" to="range_1"/>
+     <remap from="range_back_left" to="range_2"/>
+     <remap from="range_back_right" to="range_3"/>
+     </node> -->
 </launch>
